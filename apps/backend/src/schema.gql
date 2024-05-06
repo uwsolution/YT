@@ -1,0 +1,91 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+directive @upper on FIELD_DEFINITION
+
+type Wallet {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Renzo {
+  """wallet"""
+  walletHash: String!
+
+  """renzoPoints"""
+  renzoPoints: Int!
+
+  """eigenLayerPoints"""
+  eigenLayerPoints: Int!
+}
+
+type Zircuit {
+  """wallet"""
+  walletHash: String!
+
+  """Zircuit Points"""
+  zircuitPoints: Int!
+}
+
+type Karak {
+  """wallet"""
+  walletHash: String!
+
+  """Zircuit Points"""
+  points: Int!
+}
+
+type SwellPoints {
+  """wallet"""
+  walletHash: String!
+
+  """EigenPoints Swell"""
+  Points: Int!
+
+  """EigenPoints Swell"""
+  EigenPoints: Int!
+}
+
+type EtherFi {
+  """wallet"""
+  walletHash: String!
+
+  """loyaltyPoints EtherFi"""
+  loyaltyPoints: Int!
+
+  """EigenPoints EtherFi"""
+  eigenlayerPoints: Int!
+
+  """loyaltyPoints EtherFi"""
+  liquidLoyaltyPoints: Int!
+
+  """EigenPoints EtherFi"""
+  liquidEigenlayerPoints: Int!
+}
+
+type Query {
+  wallet: [Wallet!]!
+  walletRenzo(wallet: String!): Renzo!
+  walletZircuit(wallet: String!): Zircuit!
+  walletKarak(wallet: String!): Karak!
+  walletEtherFi(wallet: String!): EtherFi!
+  walletSwellPoints(wallet: String!): SwellPoints!
+}
+
+type Mutation {
+  createWallet(createWalletInput: CreateWalletInput!): Wallet!
+  updateWallet(updateWalletInput: UpdateWalletInput!): Wallet!
+  removeWallet(id: Int!): Wallet!
+}
+
+input CreateWalletInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateWalletInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}

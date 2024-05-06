@@ -1,0 +1,48 @@
+{
+  "name": "your-jira",
+  "version": "1.0.0",
+  "description": "An end to end mini-project which explores using NextJs, Next Auth on the frontend and NestJs backend by making a lightweight Kanban board called \\\"Your Jira\\\".",
+  "workspaces": [
+    "apps/*"
+  ],
+  "keywords": [
+    "nest",
+    "next",
+    "turborepo",
+    "next-auth",
+    "supabase"
+  ],
+  "author": "Abhik Banerjee",
+  "packageManager": "npm@9.6.3",
+  "devDependencies": {
+    "@types/puppeteer": "^7.0.4",
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "tsconfig": "*",
+    "turbo": "latest"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "@nestjs/apollo": "^12.1.0",
+    "@nestjs/axios": "^3.0.2",
+    "@nestjs/config": "^3.2.2",
+    "@nestjs/graphql": "^12.1.1",
+    "@nextui-org/react": "^2.3.6",
+    "axios": "^1.6.8",
+    "framer-motion": "^11.1.7",
+    "graphql": "^16.8.1",
+    "nest-commander": "^3.13.0",
+    "nest-puppeteer": "^1.1.1",
+    "puppeteer": "^22.7.1",
+    "puppeteer-chromium-resolver": "^22.0.0",
+    "puppeteer-core": "^22.7.1",
+    "reactjs-localstorage": "^1.0.1"
+  }
+}
