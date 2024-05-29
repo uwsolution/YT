@@ -13,7 +13,7 @@ export class AppController {
   @Get()
   getHello(): any {
     return this.walletService.getEtherFiPoints(
-      '0xe7ded75f45A6c52775b4E1BF881004D7dd8b4dEf',
+      '',
     );
   }
 }
